@@ -1,0 +1,122 @@
+body {
+  width: 1000px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #fcf5e5;
+  margin: auto;
+  color: black;
+}
+
+.nav {
+  height: 100px;
+  background-color: #be8457;
+}
+
+.nav ul {
+  font-size: large;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.nav ul li {
+  line-height: 100px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  display: inline;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25em;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin: auto;
+  background-color: #ebd5b3;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main h1 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 3em;
+  flex-grow: 1;
+}
+
+.landing {
+  display: flex;
+  background-color: #d5a15f;
+  margin: 30px;
+}
+
+.landing img {
+  height: 350px;
+  transform: rotate(-5deg);
+  border: 15px solid;
+  border-color: #a2602c;
+  margin: auto;
+}
+
+.landing .description {
+  flex-grow: 1;
+  margin: 50px;
+}
+
+.landing h1 {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.landing p {
+  font-size: 1.15rem;
+}
+
+.projects {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 30px;
+  height: fit-content;
+}
+
+.projects .project_container .project {
+  flex-grow: 1;
+  margin: 10px;
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+  background-color: #f4d2a2;
+  border: 10px solid #a2602c;
+  border-radius: 15px;
+}
+
+.projects .project_container .project img {
+  width: 100px;
+  margin: auto;
+  padding: 5px;
+}
+
+.projects .project_container .project .description {
+  margin: 30px;
+}
+
+.projects .project_container .project .description h1 {
+  font-size: 2em;
+}
+
+.projects .project_container .project .description p {
+}
