@@ -4,58 +4,132 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./observers.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Condensed:wght@300&family=Monsieur+La+Doulaise&display=swap"
       rel="stylesheet"
     />
     <title>Adrastopoulos</title>
   </head>
-  <body>
-    <div class="nav">
-      <ul>
-        <li><a href="">Home</a></li>
-        <!-- <li><a href="">About me</a></li> -->
-        <li><a href="">Projects</a></li>
-        <!-- <li><a href="">Blog</a></li> -->
-      </ul>
-    </div>
-    <div class="main">
-      <div class="landing">
-        <img src="./images/Adrastopoulos.JPG" />
-        <div class="description">
-          <h1 class="name">Adrastopoulos</h1>
-          <p>
-            Motivated and hardworking student seeking opportunities to develop
-            computer software design and analysis.
-          </p>
+  <body class="bg-light">
+    <section class="landing" id="landing">
+      <div class="container container--center container--screen container--narrow fade-in">
+        <div class="split">
+          <div>
+            <img src="./images/Adrastopoulos.JPG" alt="Profile Picture" />
+          </div>
+          <div>
+            <h1 class="fancy">Adrastopoulos</h1>
+            <p>
+              Amet delectus error blanditiis tempora esse aut voluptates quo
+              modi quam fugiat, quibusdam veniam non nobis tenetur corporis
+              natus a perspiciatis cupiditate maxime quasi est.
+              <br><br>
+              <a href="#projects">Projects</a>
+              <br>
+              <a href="#blog">Blog</a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="projects">
-        <h1>Projects</h1>
-		<div class=project_container>
-			<div class="project">
-				<img src="https://cdn.discordapp.com/emojis/843375936589922305.webp?size=96&quality=lossless"/>
-				<div class="description">
-					<h1>Economica Discord Bot</h1>
-					<p>Virtual economy in which users can barter on a
-						per-server market system.</p>
-				</div>
-			</div>
-			<div class="project">
-				<img src="https://cdn.discordapp.com/emojis/843375936589922305.webp?size=96&quality=lossless"/>
-				<div class="description">
-					<h1>Discord Email Bot</h1>
-					<p>An email forwarding service integrated with
-						discord using the IMAP protocol.</p>
-				</div>
-			</div>
-		</div>
-    </div>
-    <div class="footer">
-      <div class="contact"></div>
-    </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="split">
+          <div class="project from-bottom">
+            <h3 class="economica_small">Economica</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              temporibus ipsam dolor recusandae, inventore sunt, magni error
+              voluptates aut possimus nisi voluptatem facilis totam natus?
+            </p>
+            <a href="https://github.com/Economica-Bot?type=source" target="_blank">Link</a>
+          </div>
+          <div class="project from-bottom">
+            <h3>Discord Email Webhook</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+              ratione, voluptatibus dicta adipisci iste error omnis, consequuntur
+              sed soluta magnam esse totam fugit modi natus obcaecati quia
+              reiciendis molestias maxime.
+            </p>
+            <a href="https://github.com/Adrastopoulos/Email-Discord-Webhook" target="_blank">Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="container">
+        <h2>Recent Blogs</h2> 
+        <div class="split">
+          <div class="post from-bottom">
+            <h3>Environmental Awareness</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ea
+              vel reiciendis iste inventore dolore nisi exercitationem nulla
+              repellendus possimus et suscipit praesentium labore, laboriosam in
+              distinctio blanditiis quod quia.
+            </p>
+          </div>
+          <div class="post from-bottom">
+            <h3>The Ramifications of Bitcoin</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ea
+              vel reiciendis iste inventore dolore nisi exercitationem nulla
+              repellendus possimus et suscipit praesentium labore, laboriosam in
+              distinctio blanditiis quod quia.
+            </p>
+            <a href="./blog/the_ramifications_of_bitcoin.html">Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" id="form">
+      <div class="container">
+        <h2>Contact</h2>
+        <form>
+          <h3>Contact Info</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+          <br>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject">
+          <br>
+
+          <h3>Comment Type</h3>
+          <input type="checkbox" id="subject1">
+          <label for="subject1">How Can I Help?</label>
+          <br>
+          <input type="checkbox" id="subject2">
+          <label for="subject2">Would Like Information</label>
+          <br>
+          <input type="checkbox" id="subject3">
+          <label for="subject3">Add Me To Mail List</label>
+          <br>
+
+          <h3>Message</h3>
+          <input type="text" id="message" oninput="this.size = this.value.length">
+          <br>
+          <input type="submit" value="submit">
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container container--narrow">
+        <a href="#landing">Back to top</a>
+      </div>
+    </footer>
+    <script src="./js/observers.js"></script>
   </body>
 </html>
